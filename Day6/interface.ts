@@ -1,4 +1,4 @@
-//Interface-only work with object
+// //Interface-only work with object
 
 interface emp{
     name:string,
@@ -10,15 +10,6 @@ const Emp:emp={
 }
 console.log(Emp);
 
-//function Interface
-
-interface Function{
-    (x:number,y:number):number
-}
-let addition:Function=(p1:number,p2:number)=>{
-    return p1+p2
-}
-
 //Extending Interface
 
 interface employee extends emp{
@@ -29,6 +20,5 @@ const Employee:employee={
     age:30,
     employeeId:100
 }
-
 
 
