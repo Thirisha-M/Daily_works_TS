@@ -78,7 +78,7 @@ add4=(a:number,b:number,...c:number[]):number=>{
 }
 console.log(add4(15,47,1,3,2,));
 
-//Function Signature
+// Function Signature
 
 let add5:(x:number,y:number,...z:number[])=>void
 add5=(a:number,b:number,...c:number[]):number=>{
