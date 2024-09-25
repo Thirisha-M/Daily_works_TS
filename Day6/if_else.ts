@@ -34,3 +34,15 @@ function checkNumber(num: number): string {
 console.log(checkNumber(10));  
 console.log(checkNumber(-5));  
 console.log(checkNumber(0));    
+
+//Ternary Operator
+
+let i:number=100;
+let j:number=200;
+
+i>j?console.log("i is gr than j"):console.log("j is gr than i");
+
+//Ternary Operator
+
+let browser:string="edge";
+(browser === "chrome")?console.log("launch chrome"):browser==="firefox"?console.log("launch firefox"):console.log("please pass the right browser")

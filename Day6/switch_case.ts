@@ -15,7 +15,7 @@ function checkDay(day: string): string {
 }
 console.log(checkDay("Monday"));  
 console.log(checkDay("Saturday")); 
-console.log(checkDay("Funday"));   
+console.log(checkDay("Friday"));   
 
 //example 2
 
@@ -42,3 +42,26 @@ console.log(checkGrade(85));
 console.log(checkGrade(75)); 
 console.log(checkGrade(65));  
 console.log(checkGrade(55));  
+
+//switch case with Enums:
+
+enum Browser{
+    Firefox="firefox",
+    Safari="safari",
+    Edge="edge",
+    Chrome="chrome"
+}
+let browserName:string=Browser.Firefox;
+switch(browserName){
+    case Browser.Firefox:
+        console.log("launch firefox");
+        break;
+        case Browser.Chrome:
+            console.log("launch chrome");
+            break;
+            default:
+                console.log("Wrong browser info");
+                break;
+
+                
+}

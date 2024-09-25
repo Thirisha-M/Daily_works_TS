@@ -27,3 +27,10 @@ function checkNumber(num) {
 console.log(checkNumber(10));
 console.log(checkNumber(-5));
 console.log(checkNumber(0));
+//Ternary Operator
+var i = 100;
+var j = 200;
+i > j ? console.log("i is gr than j") : console.log("j is gr than i");
+//Ternary Operator
+var browser = "edge";
+(browser === "chrome") ? console.log("launch chrome") : browser === "firefox" ? console.log("launch firefox") : console.log("please pass the right browser");

@@ -15,7 +15,7 @@ function checkDay(day) {
 }
 console.log(checkDay("Monday"));
 console.log(checkDay("Saturday"));
-console.log(checkDay("Funday"));
+console.log(checkDay("Friday"));
 //example 2
 function checkGrade(score) {
     switch (true) {
@@ -40,3 +40,23 @@ console.log(checkGrade(85));
 console.log(checkGrade(75));
 console.log(checkGrade(65));
 console.log(checkGrade(55));
+//switch case with Enums:
+var Browser;
+(function (Browser) {
+    Browser["Firefox"] = "firefox";
+    Browser["Safari"] = "safari";
+    Browser["Edge"] = "edge";
+    Browser["Chrome"] = "chrome";
+})(Browser || (Browser = {}));
+var browserName = Browser.Firefox;
+switch (browserName) {
+    case Browser.Firefox:
+        console.log("launch firefox");
+        break;
+    case Browser.Chrome:
+        console.log("launch chrome");
+        break;
+    default:
+        console.log("Wrong browser info");
+        break;
+}
