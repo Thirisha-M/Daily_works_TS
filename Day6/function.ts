@@ -77,14 +77,3 @@ add4=(a:number,b:number,...c:number[]):number=>{
     
 }
 console.log(add4(15,47,1,3,2,));
-
-// Function Signature
-
-let add5:(x:number,y:number,...z:number[])=>void
-add5=(a:number,b:number,...c:number[]):number=>{
-    console.log(c)
-    let d=c.reduce((x,y) => x+y ,0)
-    return a+b+d;
-    
-}
-console.log(add5(15,47,1,2,38,98));
