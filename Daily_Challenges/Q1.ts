@@ -36,7 +36,7 @@ function ascendingSequence(arr: number[]): void
     }
     console.log(`The length of the longest ascending sequence is: ${maxLen}`);
     const longestSequence = arr.slice(maxStartIndex, maxStartIndex + maxLen);
-    console.log("The longest ascending sequence is: ", longestSequence.join(" "));   
+    console.log("The longest ascending sequence is: ", longestSequence.join(" "));
 }
 const arr: number[] = [45,40,0,39,10];
-console.log(ascendingSequence(arr));
+ascendingSequence(arr);

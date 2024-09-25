@@ -1,7 +1,7 @@
-// //Interface-only work with object
+//Interface-only work with object
 var Emp = {
     name: 'Divya',
-    age: 21
+    age: 12,
 };
 console.log(Emp);
 var Employee = {
@@ -9,3 +9,4 @@ var Employee = {
     age: 30,
     employeeId: 100
 };
+console.log(Employee.name);

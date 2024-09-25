@@ -10,5 +10,5 @@ console.log((<string>x).length)
 //unknown number to string
 
 
-let y:unknown=20
+let y:unknown='20'
 console.log((y as string).length)//undefined

@@ -1,12 +1,13 @@
-// //Interface-only work with object
+//Interface-only work with object
 
 interface emp{
     name:string,
     age:number
+    
 }
 const Emp:emp={
     name:'Divya',
-    age:21
+    age:12,
 }
 console.log(Emp);
 
@@ -20,5 +21,5 @@ const Employee:employee={
     age:30,
     employeeId:100
 }
-
+console.log(Employee.name);
 
