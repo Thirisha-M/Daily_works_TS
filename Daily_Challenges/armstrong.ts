@@ -1,11 +1,11 @@
 function isArmstrongNumber(num: number): void {
     let sum = 0;
     let temp = num;
-    const numDigits = num.toString().length;
+    const numDigits = num.toString().length; //3
 
     while (temp > 0) {
-        const digit = temp % 10;
-        sum += Math.pow(digit, numDigits);
+        const digit = temp % 10;  //3
+        sum += Math.pow(digit, numDigits); // 
         temp = Math.floor(temp / 10);
     }
 

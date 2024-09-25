@@ -11,4 +11,5 @@ function isPerfectNumber(num: number): void {
         console.log(`${num} is not a Perfect Number.`);
     }
 }
-console.log(isPerfectNumber(6))
+console.log(isPerfectNumber(6))//1 3 2
+

@@ -69,11 +69,14 @@ printObject({name:'Test',age:30})
 
 //rest params
 
-let add4:Function;
-add4=(a:number,b:number,...c:number[]):number=>{
-    console.log(c)
-    let d=c.reduce((x,y) => x+y ,0)
-    return a+b+d;
-    
+function average(...numbers:number[]):any{
+    let total=0;
+    for(let num of numbers){
+        total += num;
+    }
+    return numbers.length ===0?0:total/numbers.length;
 }
-console.log(add4(15,47,1,3,2,));
+console.log(average(10,20,30,40));
+console.log(average(5,6));
+console.log(average(1));
+console.log(average( ));
