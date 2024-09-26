@@ -1,9 +1,10 @@
-/* Write a TypeScript program that declares a variable `name` and assigns it a string value.
+/* 1.Write a TypeScript program that declares a variable `name` and assigns it a string value.
 Also declare a variable `age` and assign it a number value.
  Finally print the values of name and age.*/
 var Name = "Divya";
 var age = 21;
 console.log(Name, age);
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 /*Write a TypeScript program that declares variables using let, const, and var.
  Then, describe how each declaration type behaves with respect to scoping and mutability*/
 // Using let (Block-scoped, mutable)
@@ -24,6 +25,7 @@ function exampleFunction() {
     console.log(myVariable3); // Output: false (the inner variable)
 }
 exampleFunction();
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 /*3. Write a TypeScript program that declares variables of the
 following data types: number, string, boolean, and undefined.
  Assign values to them and perform basic operations.*/
@@ -49,17 +51,20 @@ if (undefinedVariable === undefined) {
 else {
     console.log("undefinedVariable is defined");
 }
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 /* 4.Write a TypeScript program that declares a variable as a number
 and then tries to assign a string to it to see type checking in action.*/
 var n = 10;
 console.log("n= ", n);
-/* Write a TypeScript program that declares a variable without specifying
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+/*5.Write a TypeScript program that declares a variable without specifying
  its type and shows how TypeScript infers the type based on the assigned value.*/
 var names = "Divya";
 console.log("Type of names:", typeof names);
 var ages = 20;
 console.log("Type of ages:", typeof ages);
-/*Write a TypeScript program that converts a variable of one type
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+/*6.Write a TypeScript program that converts a variable of one type
 to another using type assertions and type conversion functions like parseInt().*/
 //string to number
 var str_num = "100";
@@ -69,3 +74,28 @@ console.log("number from assertion:", numberFromAssertion);
 var numberValue = 200;
 var stringFromAssertion = numberValue.toString();
 console.log("String from assertion:", stringFromAssertion);
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+/*8.Write a TypeScript program that declares an array of a specific data type.
+ It will demonstrates common array operations like adding elements, removing elements,
+ and iterating through the array.*/
+var color = ["green", "yellow", "voilet", "black", "pink"];
+color.push("White"); //Adding to the end
+color.unshift("babypink"); //Adding to the beginning
+console.log(color);
+color.pop(); //Removes the last element
+color.shift(); //Removes the first element
+"------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+/*9.Write a TypeScript program that defines an enumeration 'Color' with values 'Red', 'Green',
+'White' and Blue. Create a variable 'selectedColor' of type 'Color' and assign it one of the enumeration values.*/
+// Define an enumeration 'Color'
+var Color;
+(function (Color) {
+    Color["Red"] = "Red";
+    Color["Green"] = "Green";
+    Color["White"] = "White";
+    Color["Blue"] = "Blue";
+})(Color || (Color = {}));
+// Create a variable 'selectedColor' of type 'Color' and assign it a value
+var selectedColor = Color.Green;
+console.log("Selected Color is:", selectedColor);
+"------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
