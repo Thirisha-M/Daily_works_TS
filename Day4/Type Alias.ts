@@ -18,7 +18,7 @@ type Person = {
   };
   console.log(person);
 
-  //interscetion for Type Alias
+  //intersection for Type Alias
 
   type Personal = {
     name: string;

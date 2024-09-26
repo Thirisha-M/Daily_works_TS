@@ -1,0 +1,71 @@
+/* Write a TypeScript program that declares a variable `name` and assigns it a string value.
+Also declare a variable `age` and assign it a number value.
+ Finally print the values of name and age.*/
+var Name = "Divya";
+var age = 21;
+console.log(Name, age);
+/*Write a TypeScript program that declares variables using let, const, and var.
+ Then, describe how each declaration type behaves with respect to scoping and mutability*/
+// Using let (Block-scoped, mutable)
+var myVariable1 = 5;
+if (true) {
+    var myVariable1_1 = 10; // This is a different variable within the block scope.
+}
+console.log(myVariable1); // Output: 5 (the outer variable)
+// Using const (Block-scoped, immutable)
+var myVariable2 = "Hello";
+//myVariable2 = "World"; // Error: Cannot reassign a const variable
+// Using var (Function-scoped, mutable)
+function exampleFunction() {
+    var myVariable3 = true;
+    if (myVariable3) {
+        var myVariable3 = false; // This redeclares the same variable within the function scope.
+    }
+    console.log(myVariable3); // Output: false (the inner variable)
+}
+exampleFunction();
+/*3. Write a TypeScript program that declares variables of the
+following data types: number, string, boolean, and undefined.
+ Assign values to them and perform basic operations.*/
+var n1 = 100;
+var strVariable = "Divya";
+var boolVariable = false;
+var undefinedVariable = undefined;
+//basic operation
+var n2 = 10;
+//Addition
+var sum = n1 + n2;
+console.log("sum:", sum);
+//string Concatenation
+var concatendatedString = strVariable + "How Are You?";
+console.log("concatendatedString:", concatendatedString);
+//Logical Operation
+var isTrue = boolVariable && true;
+console.log("Logical AND", isTrue);
+//check if undefined
+if (undefinedVariable === undefined) {
+    console.log("undefinedVariable is defined");
+}
+else {
+    console.log("undefinedVariable is defined");
+}
+/* 4.Write a TypeScript program that declares a variable as a number
+and then tries to assign a string to it to see type checking in action.*/
+var n = 10;
+console.log("n= ", n);
+/* Write a TypeScript program that declares a variable without specifying
+ its type and shows how TypeScript infers the type based on the assigned value.*/
+var names = "Divya";
+console.log("Type of names:", typeof names);
+var ages = 20;
+console.log("Type of ages:", typeof ages);
+/*Write a TypeScript program that converts a variable of one type
+to another using type assertions and type conversion functions like parseInt().*/
+//string to number
+var str_num = "100";
+var numberFromAssertion = parseInt(str_num);
+console.log("number from assertion:", numberFromAssertion);
+//number to string
+var numberValue = 200;
+var stringFromAssertion = numberValue.toString();
+console.log("String from assertion:", stringFromAssertion);
