@@ -112,3 +112,46 @@ let numberValue:number=200;
 let stringFromAssertion:string=numberValue.toString();
 console.log("String from assertion:",stringFromAssertion);
 "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+/*8.Write a TypeScript program that declares an array of a specific data type.
+ It will demonstrates common array operations like adding elements, removing elements, 
+ and iterating through the array.*/
+
+ let color:string[]=["green","yellow","voilet","black","pink"]
+ color.push("White");//Adding to the end
+ color.unshift("babypink");//Adding to the beginning
+ console.log(color);
+ color.pop();//Removes the last element
+ color.shift()//Removes the first element
+
+ "------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+ /*9.Write a TypeScript program that defines an enumeration 'Color' with values 'Red', 'Green', 
+ 'White' and Blue. Create a variable 'selectedColor' of type 'Color' and assign it one of the enumeration values.*/
+
+ // Define an enumeration 'Color'
+
+ enum Color {
+    Red = "Red",
+    Green = "Green",
+    White = "White",
+    Blue = "Blue"
+}
+
+// Create a variable 'selectedColor' of type 'Color' and assign it a value
+let selectedColor: Color = Color.Green;
+
+console.log("Selected Color is:", selectedColor);
+
+"------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+/*10.Write a TypeScript program that declares a variable 'isNull' and assigns it null.
+ You should also declare a variable called 'isUndefined' and assign it an undefined value.*/
+
+// Declare a variable 'isNull' and assign it null
+let isNull: null = null;
+
+// Declare a variable 'isUndefined' and assign it undefined
+let isUndefined: undefined = undefined;
+
+// Print the values of the variables
+console.log("isNull:", isNull);
+console.log("isUndefined:", isUndefined);
+"------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
