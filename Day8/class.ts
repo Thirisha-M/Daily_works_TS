@@ -1,4 +1,6 @@
-//simple class 
+
+
+// Creating the class
 
 class User {
     id: number
