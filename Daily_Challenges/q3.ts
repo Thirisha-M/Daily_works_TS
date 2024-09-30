@@ -7,8 +7,8 @@ const c=readline.createInterface({
 
 });
 c.question("Enter a and b:",(values:string)=>{
-    var a:number=Number((values.split(""))[0]);
-    var b:number=Number((values.split(""))[1]);
+    var a:number=Number((values.split(" "))[0]);
+    var b:number=Number((values.split(" "))[1]);
     a = a + b;
     b = a - b;
     a = a - b;
