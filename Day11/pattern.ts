@@ -39,3 +39,34 @@ function squarePattern(n: number): void {
     }
 }
 squarePattern(5);
+
+//A letter pattern
+function Apattern(n:number):void{
+    for(let i=0;i<n;i++){
+        let row=" ";
+        for(let j=0;j<i;j++){
+            if(i==0||j==0||i==n-2||j==n-2){
+                row += "*";
+            }else{
+                row += " ";
+            }
+            }
+            console.log(row);
+        }
+    }
+//E pattern
+
+function Epattern(n:number):void{
+    for(let i=0;i<n;i++)
+    {
+    let row=" ";
+    for(let j=0;j<i;j++){
+        if(i==0||j==0||i==n/2||i==n-1){
+            row += "*";
+        }else{
+            row += " ";
+        }
+    }
+    console.log(row)
+    }
+}
