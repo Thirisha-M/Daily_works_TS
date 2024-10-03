@@ -43,8 +43,10 @@ var cat = /** @class */ (function (_super) {
     }
     return cat;
 }(animal));
+//access those classes through the child class
 var Animal = new animal("all animals");
 var Dog = new dog("mani");
 console.log(Dog.getname());
 var Cat = new cat("leela");
 console.log(Cat.getname());
+console.log(Animal.getname());

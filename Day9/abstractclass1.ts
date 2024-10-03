@@ -16,8 +16,8 @@ console.log(c1.name);
 // create a abstract class "animal" and extend that class in the classes named "cat","dog"
 
 abstract class animal{
-    abstract name: string
-    abstract age: number;
+    name: string
+    age: number;
     getsound() {
         return `${this.name}makes the sound`
     }
@@ -29,7 +29,7 @@ class dog extends animal {
 }
 class cat extends animal {
     name = "Sugar"
-    age = 34;
+    age = 34;4
     //the name is the abstract property thus the name must be defined  inside the derived class
 }
 

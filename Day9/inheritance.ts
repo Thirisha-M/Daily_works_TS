@@ -34,3 +34,5 @@ console.log(Dog.getname());
 const Cat=new cat("leela")
 console.log(Cat.getname());
 
+console.log(Animal.getname())
+

@@ -1,31 +1,25 @@
-//Number Annotaion
+// Decimal Number
 
 let price:number=9.00;
 console.log(price);
-
-//Decimal Number
-
-let counter:number=0;
-var x:number=100;
-var y:number=200;
-console.log(counter);
+  
 
 //Binary Number
 
-let bin=0b1000;
+let bin=0b10000;
 let anotherBin:number=0B100;
 console.log(bin);
 console.log(anotherBin);
 
 //Octal number
 
-let octal:number=0o10;
+let octal:number=0o17;
 console.log(octal);
 
 //Hexa decimal
 
-let hexadecimal:number=0XA;
-console.log(hexadecimal);
+let hexa:number=0Xf;
+console.log(hexa);
 
 /*biginteger
 

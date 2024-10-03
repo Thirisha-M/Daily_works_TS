@@ -1,9 +1,10 @@
 // syntax for Type Alias
 
-// type Name=string;
+  type Name=number;
 
-// let firstName: Name;
-// let lastName: Name;
+ let firstName: Name;
+ let lastName: Name;
+ console.log()
 
 //object for Type Alias
 

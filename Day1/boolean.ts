@@ -1,28 +1,29 @@
 //boolean 
 
 let pending1:boolean;
-pending1=false;
 pending1=true;
+pending1=false;
 console.log(pending1);
 
 //NOT Operator
 
-let result;
-const pending:boolean=true;
+var display
+const pending:boolean=false;
 console.log(pending);
 const notpending=!pending;
 console.log(notpending);
-console.log(result);
+console.log(display);
 
 //AND Operator
 
-const hasError:boolean=false;
-const completed:boolean=true;
+const hasErrors:boolean=true;
+const completedd:boolean=false;
 
-result=completed&&hasError;
+var result=completedd&&hasErrors;
 console.log(result);  
 
 //OR Operator
-
-result=completed||hasError;
-console.log(result);//OR Operator
+const hasError:boolean=false;
+const completed:boolean=false;
+var result=completed||hasError;
+console.log(result);

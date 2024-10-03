@@ -54,6 +54,7 @@ function Apattern(n:number):void{
             console.log(row);
         }
     }
+Apattern(5)
 //E pattern
 
 function Epattern(n:number):void{
@@ -61,7 +62,7 @@ function Epattern(n:number):void{
     {
     let row=" ";
     for(let j=0;j<i;j++){
-        if(i==0||j==0||i==n/2||i==n-1){
+        if(i==0||j==0||i==n/2||i==n-1||j==n-1||i==1){
             row += "*";
         }else{
             row += " ";
@@ -70,3 +71,4 @@ function Epattern(n:number):void{
     console.log(row)
     }
 }
+Epattern(5)

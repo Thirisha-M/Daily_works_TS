@@ -20,11 +20,11 @@ const Patient_details=new patient_Details
 Patient_details.display_name
 console.log(Patient_details.age);//the age is static thus we cannot access it by the instance
 
-// thus the code throws the error
+thus the code throws the error
 
 class patient_Details{
     name:string="divya"
-    static:age:number=22;
+    static age:number=22;
 
     display_name(){
         console.log(this.name);
@@ -37,5 +37,5 @@ class patient_Details{
 }
 const Patient_details=new patient_Details
 Patient_details.display_name()
-console.log(patient_Details.age);//accessing the age directly using the class name
-Patient_details.display_age()//accessing the age through the display_age metod
+patient_Details.display_age()//accessing the age directly using the class name
+

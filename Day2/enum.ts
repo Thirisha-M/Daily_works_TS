@@ -1,3 +1,29 @@
+//Enums-group of constants
+
+//number
+
+enum Direction{
+    East,
+    West,
+    South,
+    North,
+
+}
+console.log(Direction.East);
+
+//string
+
+enum Direction1{
+    East='east',
+    West='west',
+    South='south',
+    North='north',
+
+}
+console.log(Direction1.South)
+
+//Example
+
 enum Month{
     Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
 };
@@ -18,6 +44,8 @@ function isItSummer(month: Month) {
 console.log(isItSummer(Month.Feb));
 console.log(isItSummer(6));
 
+//Example1
+
 enum Month1 {
     Jan = 1,
     Feb,
@@ -34,6 +62,22 @@ enum Month1 {
 };
 console.log(Month1);
 
+//Example2
+
+enum Direction {
+    Up=0,
+    Down,
+    Left,
+    Right
+}
+
+let currentDirection: Direction = Direction.Up;
+
+if (currentDirection === Direction.Up) {
+    console.log("You are moving up!");
+}
+
+//Example 3
 
 enum ApprovalStatus{
     draft,
@@ -53,21 +97,8 @@ if(request.status == ApprovalStatus.rejected){
 else{
     console.log('error');
 }
-//Example 2
-// Enum for directions
-enum Direction {
-    Up,
-    Down,
-    Left,
-    Right
-}
 
-let currentDirection: Direction = Direction.Up;
-
-if (currentDirection === Direction.Up) {
-    console.log("You are moving up!");
-}
-//Example3
+//Example 4
 
 enum StatusCode {
     Success = 200,

@@ -1,11 +1,9 @@
 //Object Type
-var employee;
-employee = {
-    firstname: 'thirisha',
-    lasname: "M",
-    age: 21,
-    jobtitle: "FullStack Developer"
+var person;
+person = {
+    name: 'Thirisha',
+    age: 21
 };
-console.log(employee);
-var vacant = {};
-console.log(vacant.toString());
+console.log(person);
+// let vacant:{}={};
+// console.log(vacant.toString());
